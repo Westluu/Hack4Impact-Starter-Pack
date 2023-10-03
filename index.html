@@ -1,44 +1,158 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title> Wesley's Hack4Impact Starter Website</title>
-  </head>
-  <body>
+<head>
+    <meta name="viewport" content="with=device-width, initial-scale=1.0">
+    <title>Wesley's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0c181b6e0f.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
     <section class="header">
-      <nav>
-          <a href="index.html"> <img src="img/logo.png"></a>
-          <div class="nav-links" id="navLinks">
-              <i class="fa fa-times-circle" onclick="hideMenu()"></i>
-              <ul>
-                  <li><a href="#header">Home</a></li>
-                  <li><a href="#mh-skills">Skills/Courses Taken</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="about.html">About Me</a></li>
-                  <li><a href="">Contact</a></li>
-              </ul>
-          </div>
-          <i class="fa fa-bars" onclick="showMenu()"></i>
-      </nav>
-  
-  <div class="text-box">
-      <h1>Wesley Luu Portfolio</h1>
-      <h3><br>A computer engineering student, who is a highly motivated individual seeking to use programming and analytical skills to create meaningful impact. I am a quick learner and intrested in the field of software development and embedded system.</h3>
-  </div>    
+        <nav>
+            <a href="index.html"> <img src="img/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times-circle" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#mh-skills">Skills/Courses Taken</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    
+    <div class="text-box">
+        <h1>Wesley Luu Portfolio</h1>
+        <h3><br>A computer engineering student, who is a highly motivated individual seeking to use programming and analytical skills to create meaningful impact. I am a quick learner and intrested in the field of software development.</h3>
+    </div>    
 
-  </section>
+    </section>
 
-  <!---Toggle Menu --->
-  <script>
-    var navLinks = document.getElementById(navLinks)
+<!---Toggle Menu --->
+    <script>
+        var navLinks = document.getElementById(navLinks)
 
-    function showMenu(){
-        navLinks.style.right = "0";
-    }
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
 
-    function hideMenu(){
-        navLinks.style.right = "-200px";
-    }
-</script>
-  </body>
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
 
+<!-------Skills Page-------->
+    <!-- <br><br><br><br><br><br><br><br> -->
+    <section class="mh-skills" id="mh-skills">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="mk-skills-inner">
+                        <div class="mh-professional-skill">
+                            <h3>Technical Skills</h3>
+                            <div class="each-skills">
+                                <div class="candidatos">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="nome">Python</div>
+                                            <div class="percentage-num">95%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentagem" style="width: 95%;"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                
+                                <div class="candidatos">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="nome">Java</div>
+                                            <div class="percentage-num">75%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentagem" style="width: 75%;"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="candidatos">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="nome">Javascript</div>
+                                            <div class="percentage-num">80%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentagem" style="width: 50%;"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="candidatos">
+                                    <div class="parcial">
+                                        <div class="info">
+                                            <div class="nome">HTML</div>
+                                            <div class="percentage-num">80%</div>
+                                        </div>
+                                        <div class="progressBar">
+                                            <div class="percentagem" style="width: 50%;"></div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md-6">
+                    <div class="mh-professional-skills">
+                        <h3>Professional Skills</h3>
+                        <ul class="mh-professional-progress">
+                            <li>
+                                <div class="mh-progress mh-progress-circle" data-progress="80"></div>
+                                <div class="pr-skill-name">Communication</div>
+                            </li>
+    
+    
+                            <li>
+                                <div class="mh-progress mh-progress-circle" data-progress="95"></div>
+                                <div class="pr-skill-name">Team Work</div>
+                            </li>
+    
+    
+                            <li>
+                                <div class="mh-progress mh-progress-circle" data-progress="90"></div>
+                                <div class="pr-skill-name">Project Management</div>
+                            </li>
+    
+    
+                            <li>
+                                <div class="mh-progress mh-progress-circle" data-progress="90"></div>
+                                <div class="pr-skill-name">Creativity</div>
+                            </li>
+    
+                        </ul>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+<!-------Project Page-------->
+    <section class="projects" id="projects">
+
+
+    </section>
+</body>
 </html>
